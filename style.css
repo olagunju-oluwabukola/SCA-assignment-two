@@ -1,0 +1,267 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #a4602f;
+    color: #fff;
+    display:flex;
+    justify-content: space-around;
+    
+}
+
+nav h1{
+    font-size: 2em;
+}
+nav ul{
+    display: flex;
+}
+
+nav li{
+list-style: none;
+margin: 10px;
+}
+
+nav li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav li a:hover{
+   border-bottom: 1px solid #fff; 
+}
+
+nav li a:active{
+    border-bottom: 1px solid #fff; 
+}
+
+.banner{
+ background-image: url("bg2.jpg");
+ background-repeat: no-repeat;
+background-size: cover;
+height: 80vh;
+}
+.opacity{
+    position: relative;
+    width:100vw;
+    height: 80vh;
+    background: transparent;
+    font-size: 26px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: column;
+    background:rgba(0, 0, 0, 0.644);
+    align-items: center;
+  
+  
+   }
+
+   .opacity::before{
+    align-items: center;
+   }
+   
+   .opacity h1 {
+    color: white;
+    justify-content: center;
+    text-align: center;
+ 
+   }
+   .opacity span{
+    color: #a4602f;
+    font-size: 2em;
+   }
+   .text button a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+   }
+   .text button{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left: 80px;
+    border-radius: 15px 0;
+    
+   }
+
+   .text button:hover{
+    background-color: #a4602f;
+    border: none;
+
+   }
+.about{
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+   margin-left: 3em;
+    margin-right: 4em;
+    gap: 3em;
+    margin-bottom: 1em;
+   padding-top: 2em;
+
+}
+
+.about h1{
+    border-bottom: 2px solid #a4602f;
+    width: 250px;
+    margin-bottom: 10px;
+}
+.about p{
+    width: 600px;
+    line-height: 1.5em;
+}
+
+ .about img{
+    width: 22em;
+    height: 17em;
+}
+
+.footer{
+    display: flex;
+    justify-content:space-around ;
+    background-color: #a4602f;
+    color: #fff;
+    font-size: 13px;
+    padding: 1em;
+    line-height: 25px;
+   
+}
+.header{
+     font-size: 2em;
+     text-align: center;
+     margin-top: 30px;
+     margin-bottom: 1em;
+     font-style:oblique;
+}
+.menu-list{
+    background-color: #a4602f;
+    margin-left: 2em;
+    margin-right: 2em;
+    color: #fff;
+    border-radius: 10px;
+
+}
+
+.menu-list h3,h4{
+    margin-left: 1em;
+    line-height: 25px;
+}
+
+.menu-list ul li{
+     margin: 1em;
+}
+
+.list{
+    display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+ grid-column-gap: 10px;
+ grid-row-gap: 15px;
+margin-bottom: 2em;
+}
+.menu-list img{
+    width: 10em;
+    margin-top: 5px;
+
+}
+label{
+    margin-left: 2em;
+}
+form{
+    text-align: center;
+}
+
+.form h1{
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    
+}
+input{
+    border: none;
+    border-bottom: 1px solid #a4602f;
+    line-height: 2.5em;
+    margin-bottom: 2em;
+    margin-left: 10px;
+}
+textarea{
+    margin-left: 2em;
+    border: 1px solid #a4602f;
+    border-radius: 10px;
+
+}
+textarea::placeholder{
+    text-align: center;
+    font-size: 14px;
+    padding-top: 4.5em;
+
+}
+form button{
+    outline: none;
+    color: #fff;
+    background-color: #a4602f;
+    border: none;
+    width: 100px;
+    height: 40px;
+    margin-bottom: 3em;
+    margin-left: 2em;
+    font-size: 18px;
+    border-radius: 15px 0;
+}
+
+@media screen and (max-width:700px){
+    .about{
+        display: block;
+        justify-content: center;
+        margin-top: 3em;
+       margin-left: 3em;
+        margin-right: 4em;
+        gap: 3em;
+        margin-bottom: 1em;
+       padding-top: 2em;
+    
+    }
+    .about img{
+        margin-top: 2em;
+        width: 15em;
+    }
+    .about{
+        margin-top: 1em;
+    }
+
+    .about p{
+        width: 260px;
+        line-height: 1.5em;
+    }
+    .opacity{
+        position: relative;
+        width:100vw;
+    }
+    .footer{
+        display: block;
+        gap: 2em;
+        font-size: 12px;
+    }
+    .footer div{
+        margin: 2em;
+    }
+    .footer h2{
+        margin-bottom: 1em;
+    }
+    .footer div p{
+        margin-top: 10px;
+    }
+    .list{
+        display: grid;
+        gap: 2em;
+        justify-content: center;
+        
+}
+
+
+}
